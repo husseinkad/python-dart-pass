@@ -1,6 +1,7 @@
 def isolate(students):
-    # TODO:
-    pass
+    Class = {}
+    for index, var in students.items(): Class[var] = [index] if var not in Class.keys() else Class[var] + [index]
+    return Class
 
 
 students = {
@@ -14,11 +15,3 @@ students = {
 
 print(isolate(students))
 
-"""This should return 
-{
-    'Class 1': ['Ahmed', 'Sara', 'Zainab'],
-    'Class 3': ['Mustafa'],
-    'Class 2': ['Ali', 'Zain']
-}
-NOTE: The order of classes doesn't matter
-"""

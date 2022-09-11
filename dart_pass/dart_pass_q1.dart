@@ -43,11 +43,4 @@ void main() {
 
   print('the commin name are :  $comminNames');
   print('the names with M :  ${listB.where((item) => item.contains("M"))}');
-
-
-
-  // output
-
-// the commin name are :  [Muklah, Diyar, Noorhan, Ali, Dena, Saba, Fadi, Ahmed, Muklah]
-// the names with M :  (Muklah, Mustafa)
 }
